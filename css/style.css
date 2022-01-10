@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css2?family=Shrikhand&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100&family=Shrikhand&display=swap);
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -32,21 +34,21 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: 1px solid #9356DC;
-  background-color: #9356DC;
-  border-radius: 50px;
-  width: 40%;
-  height: 40px;
-  color: #FFF;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-radius: 50px;
+  width: 40%;
+  height: 40px;
+  color: #FFF;
   margin: 0 auto;
   -webkit-box-shadow: 0px 5px 10px grey;
           box-shadow: 0px 5px 10px grey;
+  margin-bottom: 16px;
+  margin-top: 32px;
 }
 
 .btn:hover {
@@ -57,39 +59,6 @@ footer {
 
 .linear-gradient {
   background: linear-gradient(-7deg, #8e4eda, #ff83dd);
-}
-
-.list {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: justify;
-  width: 100%;
-}
-
-.list__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 20px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #F2F2F2;
-  border: 1px solid #F2F2F2;
-  border-radius: 10px;
-  height: 50px;
-}
-
-.list__content .fas {
-  color: #9356DC;
-}
-
-.list__content__badge {
-  background-color: #9356DC;
-  color: #FFF;
-  padding: 8px;
-  border-radius: 50%;
-  line-height: 10px;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -439,15 +408,103 @@ template {
   width: 50%;
 }
 
+h1 {
+  font-family: Shrikhand;
+}
+
 a {
   text-decoration: none;
 }
 
 p {
+  font-family: Roboto;
+  font-weight: bold;
   margin: 0px;
+  color: #000;
+}
+
+.light {
+  font-family: Roboto;
+  font-weight: 300;
+}
+
+.regular {
+  font-family: Roboto;
+  font-weight: 400;
+}
+
+.medium {
+  font-family: Roboto;
+  font-weight: 500;
 }
 
 /* accueil */
+.map {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  background-color: #F2F2F2;
+  height: 300px;
+  padding-bottom: 16px;
+  text-align: center;
+}
+
+.map__name {
+  background-color: #cccccc;
+  border-top: 2px solid #a6a6a6;
+  width: 100%;
+  text-align: center;
+}
+
+.map__name .fa-map-marker-alt {
+  margin-right: 16px;
+}
+
+.list {
+  width: 100%;
+}
+
+.list__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #F2F2F2;
+  border: 1px solid #F2F2F2;
+  border-radius: 20px;
+  height: 50px;
+  margin: 8px 0;
+  -webkit-box-shadow: 0 3px 5px lightgrey;
+          box-shadow: 0 3px 5px lightgrey;
+  height: 60px;
+  width: 90%;
+}
+
+.list__content .fas {
+  color: #9356DC;
+}
+
+.list__content__badge {
+  background-color: #9356DC;
+  color: #FFF;
+  padding: 8px;
+  border-radius: 50%;
+  line-height: 10px;
+}
+
 #restaurants {
   background-color: #F2F2F2;
   padding: 20px 5px;

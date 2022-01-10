@@ -1,15 +1,15 @@
 .btn{
     display: flex;
-    border: 1px solid $color-primary;
-    background-color: $color-primary;
+    justify-content: center;
+    align-items: center;
     border-radius: 50px;
     width: 40%;
     height: 40px;
-    color: #FFF;
-    justify-content: center;
-    align-items: center;
+    color: #FFF; 
     margin: 0 auto;
     box-shadow: 0px 5px 10px grey;
+    margin-bottom: 16px;
+    margin-top: 32px;
     &:hover{
         background-color: lighten($color-primary, 10%);
         box-shadow: 0px 5px 5px grey;
@@ -18,28 +18,4 @@
 
 .linear-gradient{
     background: linear-gradient(-7deg, darken($color-primary, 2%), lighten($color-secondary, 2%))
-}
-
-.list{
-    justify-content: justify;
-    width: 100%;
-    &__content{
-        display: flex;
-        gap: 20px;
-        align-items: center; 
-        background-color: #F2F2F2;
-        border: 1px solid #F2F2F2;
-        border-radius: 10px;
-        height: 50px;
-        .fas{
-            color: $color-primary;
-        }
-        &__badge{
-            background-color: $color-primary;
-            color: #FFF;
-            padding: 8px;
-            border-radius: 50%;
-            line-height: 10px;
-        }
-    }
 }
