@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css2?family=Shrikhand&display=swap);
-@import url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100&family=Shrikhand&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&family=Shrikhand&display=swap);
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -423,9 +423,16 @@ p {
   color: #000;
 }
 
+/* Police */
+.thin {
+  font-family: Roboto;
+  font-weight: 100;
+}
+
 .light {
   font-family: Roboto;
   font-weight: 300;
+  padding-left: 8px;
 }
 
 .regular {
@@ -433,9 +440,19 @@ p {
   font-weight: 400;
 }
 
+.large {
+  font-size: 2em;
+  padding: 16px 16px;
+}
+
 .medium {
-  font-family: Roboto;
-  font-weight: 500;
+  font-size: 1.3em;
+  padding: 0 8px;
+}
+
+.small {
+  font-size: 1.1em;
+  padding-left: 8px;
 }
 
 /* accueil */
@@ -460,10 +477,11 @@ p {
 }
 
 .map__name {
-  background-color: #cccccc;
+  background-color: #d9d9d9;
   border-top: 2px solid #a6a6a6;
   width: 100%;
   text-align: center;
+  padding: 8px 0;
 }
 
 .map__name .fa-map-marker-alt {

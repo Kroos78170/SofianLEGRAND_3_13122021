@@ -26,9 +26,17 @@ p{
     color: #000;
 }
 
+/* Police */
+
+.thin{
+    font-family: Roboto;
+    font-weight: 100;
+}
+
 .light{
     font-family: Roboto;
     font-weight: 300;
+    padding-left: 8px;
 }
 
 .regular{
@@ -36,11 +44,20 @@ p{
     font-weight: 400;
 }
 
-.medium{
-    font-family: Roboto;
-    font-weight: 500;
+.large{
+    font-size: 2em;
+    padding: 16px 16px;
 }
 
+.medium{
+    font-size: 1.3em;
+    padding: 0 8px;
+}
+
+.small{
+    font-size: 1.1em;
+    padding-left: 8px;
+}
 /* accueil */
 
 .map{
@@ -51,10 +68,11 @@ p{
     padding-bottom: 16px;
     text-align: center;
     &__name{
-        background-color: darken(#F2F2F2, 15%);
+        background-color: darken(#F2F2F2, 10%);
         border-top: 2px solid darken(#F2F2F2, 30%);
         width: 100%;
         text-align: center;
+        padding: 8px 0;
         .fa-map-marker-alt{
             margin-right: 16px;
         }
