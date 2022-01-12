@@ -10,24 +10,32 @@
     font-family: Roboto;
     font-weight: 300;
     padding-left: 8px;
+    padding-top: 6px;
 }
 
 .regular{
     font-family: Roboto;
     font-weight: 400;
+    margin-top: 32px;
 }
 
-.large{
+.xlarge{
     font-size: 2em;
     padding: 16px 16px;
 }
 
-.medium{
+.large{
     font-size: 1.3em;
     padding: 0 8px;
 }
 
-.small{
+.medium{
     font-size: 1.1em;
     padding-left: 8px;
+    padding-top: 16px;
+}
+
+h1{
+    font-family: Shrikhand;
+    padding-left: 12px;
 }

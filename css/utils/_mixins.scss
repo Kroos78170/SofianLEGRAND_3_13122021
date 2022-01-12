@@ -9,3 +9,7 @@
     justify-content: space-between;
     align-items: center;
 }
+
+@mixin shadow{
+    box-shadow: 0 5px 5px lightgrey;
+}
