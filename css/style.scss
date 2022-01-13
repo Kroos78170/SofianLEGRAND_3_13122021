@@ -1,53 +1,54 @@
 @import "./utils/variables";
 @import "./utils/responsive";
+@import "./utils/mixins";
 @import "./layout/header";
 @import "./layout/footer";
 @import "./compenents/buttons";
 @import "./pages/normalize";
-@import "./utils/mixins";
 @import "./base/font";
-
-a{
+@import "./base/animations";
+a {
     text-decoration: none;
 }
 
-p{
+p {
     font-family: Roboto;
     font-weight: bold;
     margin: 0px;
     color: #000;
 }
 
+
 /* accueil */
 
-.map{
+.map {
     @include space-between;
     flex-flow: column wrap;
     background-color: #F2F2F2;
     height: 300px;
     padding-bottom: 16px;
     text-align: center;
-    p:nth-child(1){
+    p:nth-child(1) {
         margin-top: 0px;
     }
-    &__name{
+    &__name {
         background-color: darken(#F2F2F2, 10%);
         border-top: 2px solid darken(#F2F2F2, 30%);
         width: 100%;
         text-align: center;
         padding: 8px 0;
-        .fa-map-marker-alt{
+        .fa-map-marker-alt {
             margin-right: 16px;
         }
     }
 }
 
-.list{
+.list {
     width: 100%;
-    &__content{
+    &__content {
         display: flex;
         gap: 20px;
-        align-items: center; 
+        align-items: center;
         background-color: #F2F2F2;
         border: 1px solid #F2F2F2;
         border-radius: 20px;
@@ -56,10 +57,10 @@ p{
         @include shadow;
         height: 60px;
         width: 90%;
-        .fas{
+        .fas {
             color: $color-primary;
         }
-        &__badge{
+        &__badge {
             background-color: $color-primary;
             color: #FFF;
             padding: 8px;
@@ -69,12 +70,12 @@ p{
     }
 }
 
-#restaurants{
+#restaurants {
     background-color: #F2F2F2;
     padding: 20px 5px;
 }
 
-.card{
+.card {
     border: 1px solid #000;
     border-radius: 10px;
     width: 100%;
@@ -84,7 +85,7 @@ p{
     @include shadow;
     background-color: #FFF;
     position: relative;
-    &__img{
+    &__img {
         background-size: cover;
         background-position: center;
         width: 100%;
@@ -92,7 +93,7 @@ p{
         height: 75%;
         object-fit: cover;
     }
-    &__new{
+    &__new {
         position: absolute;
         top: 30px;
         right: 30px;
@@ -102,53 +103,54 @@ p{
         color: darken($color-tertiary, 40%);
         @include center;
     }
-    &__content{
+    &__content {
         display: flex;
         justify-content: space-between;
         height: 50px;
     }
 }
 
-.content__heart{
+.content__heart {
     position: relative;
     width: 100px;
     @include center;
-    .fa-heart{
+    .fa-heart {
         position: absolute;
         align-items: center;
     }
 }
 
+
 /* restaurants */
 
-.space-between{
+.space-between {
     @include space-between;
 }
 
-.underline{
+.underline {
     border-bottom: 4px solid $color-tertiary;
     padding-top: 16px;
     width: 40px;
     padding: 4px 0;
 }
 
-.menu{
+.menu {
     background-color: #F2F2F2;
     padding: 20px 8px;
-    border-radius: 10px 10px 0 0;
-    &__content{
+    border-radius: 20px 20px 0 0;
+    &__content {
         display: flex;
         flex-flow: column wrap;
         background-color: #FFF;
         border: 1px solid #F2F2F2;
         border-radius: 15px;
         margin: 12px 0;
-        height: 75px; 
+        height: 75px;
         @include shadow;
-        p:nth-child(3n){
+        p:nth-child(3n) {
             text-align: right;
             padding-right: 16px;
             padding-top: 45px;
-          }
+        }
     }
 }

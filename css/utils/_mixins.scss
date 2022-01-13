@@ -1,15 +1,29 @@
-@mixin center{
+@mixin center {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-@mixin space-between{
+@mixin space-between {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-@mixin shadow{
+@mixin shadow {
     box-shadow: 0 5px 5px lightgrey;
+}
+
+@mixin transformRotate ($degre, $delay) {
+    transform: rotate($degre);
+    animation-delay: $delay;
+}
+
+@mixin text-color($bgColor: white) {
+    @if($bgColor=='black') {
+        color: white;
+    }
+    @else {
+        color: black;
+    }
 }
