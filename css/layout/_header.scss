@@ -1,16 +1,17 @@
-header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+header {
+    @include space-between;
     margin: 8px 0;
-    i{
+    i {
         height: 100%;
         color: #000;
+        padding-left: 16px;
     }
-}
-
-#logo{
-    width: 50%;
-    margin-right: 25%;
-    margin-left: 25%;
+    .logo {
+        width: 50%;
+        margin: 0 25%;
+    }
+    .margin {
+        margin-left: 18%;
+        margin-right: 40%;
+    }
 }

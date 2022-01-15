@@ -14,7 +14,7 @@
     box-shadow: 0 5px 5px lightgrey;
 }
 
-@mixin transformRotate ($degre, $delay) {
+@mixin transformrotate ($degre, $delay) {
     transform: rotate($degre);
     animation-delay: $delay;
 }

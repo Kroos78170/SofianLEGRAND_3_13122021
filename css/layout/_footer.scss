@@ -1,7 +1,20 @@
 footer {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: black;
-    @include text-color('black');
+    flex-flow: column wrap;
+    justify-content: left;
+    background-color: darken(#F2F2F2, 75%);
+    height: 200px;
+    p {
+        color: #FFF;
+        padding: 6px 16px;
+    }
+    i {
+        color: white;
+        padding-right: 8px;
+    }
+    .logo {
+        height: 50px;
+        width: 25%;
+        padding: 8px 16px;
+    }
 }

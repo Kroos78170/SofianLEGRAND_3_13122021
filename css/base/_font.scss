@@ -1,41 +1,41 @@
 @import url(https://fonts.googleapis.com/css2?family=Shrikhand&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&family=Shrikhand&display=swap);
-
-.thin{
+.thin {
     font-family: Roboto;
     font-weight: 100;
 }
 
-.light{
+.light {
     font-family: Roboto;
     font-weight: 300;
-    padding-left: 8px;
-    padding-top: 6px;
 }
 
-.regular{
+.regular {
     font-family: Roboto;
     font-weight: 400;
-    margin-top: 32px;
 }
 
-.xlarge{
+.xlarge {
     font-size: 2em;
     padding: 16px 16px;
 }
 
-.large{
+.large {
     font-size: 1.3em;
     padding: 0 8px;
 }
 
-.medium{
+.medium {
     font-size: 1.1em;
     padding-left: 8px;
     padding-top: 16px;
 }
 
-h1{
+.small {
+    font-size: 0.8em;
+}
+
+h1 {
     font-family: Shrikhand;
     padding-left: 12px;
 }
