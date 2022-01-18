@@ -4,6 +4,9 @@ footer {
     justify-content: left;
     background-color: darken(#F2F2F2, 75%);
     height: 200px;
+    h2 {
+        color: #FFF;
+    }
     p {
         color: #FFF;
         padding: 6px 16px;
@@ -11,10 +14,5 @@ footer {
     i {
         color: white;
         padding-right: 8px;
-    }
-    .logo {
-        height: 50px;
-        width: 25%;
-        padding: 8px 16px;
     }
 }
