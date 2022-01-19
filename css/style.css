@@ -257,6 +257,11 @@ p {
   padding-top: 8px;
 }
 
+.menu .fa-heart {
+  font-size: 1.8em;
+  margin-right: 8px;
+}
+
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -720,7 +725,7 @@ h2 {
   bottom: 0;
   height: 100%;
   width: 100%;
-  z-index: 1;
+  z-index: 1000;
   -webkit-animation: loader 3s ease-in;
           animation: loader 3s ease-in;
   -webkit-animation-fill-mode: forwards;
@@ -925,6 +930,11 @@ h2 {
   transition: 700ms cubic-bezier(0.32, 0, 0.07, 1);
 }
 
+.menu__content a {
+  -webkit-transition: 500ms cubic-bezier(0.32, 0, 0.07, 1);
+  transition: 500ms cubic-bezier(0.32, 0, 0.07, 1);
+}
+
 .menu__content:hover {
   cursor: pointer;
 }
@@ -950,5 +960,50 @@ h2 {
   left: 65%;
   padding-right: 16px;
   padding-top: 45px;
+}
+
+.heart-1 {
+  position: absolute;
+  background-color: white;
+  color: #9356DC;
+}
+
+.heart-2 {
+  position: absolute;
+  background-color: white;
+  -webkit-transition: 2000ms;
+  transition: 2000ms;
+  color: grey;
+}
+
+.heart-1:hover {
+  opacity: 1;
+}
+
+.heart-2:hover {
+  opacity: 0;
+}
+
+@-webkit-keyframes menu_keyframes {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes menu_keyframes {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.menu__content {
+  -webkit-animation: menu_keyframes 4000ms backwards;
+          animation: menu_keyframes 4000ms backwards;
 }
 /*# sourceMappingURL=style.css.map */
