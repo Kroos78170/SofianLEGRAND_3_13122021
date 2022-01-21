@@ -1,3 +1,5 @@
+/* Accueil */
+
 .loader {
     @include center;
     position: absolute;
@@ -59,7 +61,7 @@
             @include transformrotate(270deg, -200ms);
         }
         div:nth-child(11) {
-            @include transformrotate(300deg, 100ms);
+            @include transformrotate(300deg, -100ms);
         }
         div:nth-child(12) {
             @include transformrotate(330deg, 0ms);
@@ -84,6 +86,47 @@
         opacity: 0;
         visibility: hidden;
     }
+}
+
+.fa-heart {
+    position: absolute;
+    background-color: transparent;
+    color: grey;
+    &.far {
+        &:hover+i {
+            color: $color-primary;
+            animation: heart 2000ms ease-out;
+        }
+    }
+    &.fas {
+        color: $color-primary;
+        font-size: 0;
+    }
+}
+
+@keyframes heart {
+    0% {
+        font-size: 0;
+    }
+    100% {
+        font-size: 1.3em;
+    }
+}
+
+
+/* Restaurants */
+
+@keyframes menu_keyframes {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.menu__content {
+    animation: menu_keyframes 3000ms backwards;
 }
 
 .fa-check {
@@ -142,38 +185,4 @@
         padding-right: 16px;
         padding-top: 45px;
     }
-}
-
-.heart-1 {
-    position: absolute;
-    background-color: white;
-    color: $color-primary;
-}
-
-.heart-2 {
-    position: absolute;
-    background-color: white;
-    transition: 2000ms;
-    color: grey;
-}
-
-.heart-1:hover {
-    opacity: 1;
-}
-
-.heart-2:hover {
-    opacity: 0;
-}
-
-@keyframes menu_keyframes {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-.menu__content {
-    animation: menu_keyframes 4000ms backwards;
 }

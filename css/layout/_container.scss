@@ -39,17 +39,21 @@ p {
         align-items: center;
         background-color: #F2F2F2;
         border: 1px solid #F2F2F2;
+        position: relative;
+        padding-left: 50px;
         border-radius: 20px;
         height: 50px;
         margin: 8px 0;
         @include shadow;
         height: 60px;
-        width: 90%;
+        width: 75%;
         .fas {
             color: $color-primary;
         }
         &__badge {
             background-color: $color-primary;
+            position: absolute;
+            left: -13px;
             color: #FFF;
             padding: 8px;
             border-radius: 50%;
@@ -139,6 +143,12 @@ p {
     padding: 40px 8px;
     border-radius: 20px 20px 0 0;
     position: relative;
+    .fa-heart {
+        left: 85%;
+        font-size: 1.8em;
+        margin-right: 8px;
+        background-color: #F2F2F2;
+    }
     &__content {
         display: flex;
         flex-flow: column wrap;
@@ -160,9 +170,5 @@ p {
             padding-left: 8px;
             padding-top: 8px;
         }
-    }
-    .fa-heart {
-        font-size: 1.8em;
-        margin-right: 8px;
     }
 }
