@@ -96,6 +96,7 @@
         &:hover+i {
             color: $color-primary;
             animation: heart 2000ms ease-out;
+            animation-fill-mode: forwards;
         }
     }
     &.fas {

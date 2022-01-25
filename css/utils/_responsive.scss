@@ -1,0 +1,103 @@
+@media (min-width: 768px) {
+    /* Général */
+    footer {
+        flex-flow: row wrap;
+        justify-content: center;
+        h2 {
+            text-align: center;
+            width: 50%;
+            margin: 30px 165px;
+        }
+    }
+    /* Accueil */
+    .list {
+        &__content {
+            width: 90%;
+        }
+    }
+    /* Restaurants */
+    header .margin {
+        margin-right: 38%;
+        margin-left: 20%;
+    }
+}
+
+@media (min-width: 992px) {
+    /* Général */
+    .loader {
+        display: none;
+    }
+    /* Accueil */
+    header {
+        .logo {
+            width: 20%;
+            margin: 0 40%;
+        }
+    }
+    main {
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        .map {
+            order: 2;
+            width: 47%;
+            margin: 0 3%;
+        }
+        .list {
+            order: 1;
+            width: 47%;
+        }
+    }
+    #restaurants {
+        order: 3;
+        width: 100%;
+        h1 {
+            margin-right: 98%;
+        }
+        background-color: #FFF;
+        display: flex;
+        flex-flow: row wrap;
+        .card {
+            width: 45%;
+            margin: 2%;
+        }
+    }
+    footer {
+        h2 {
+            text-align: center;
+            width: 50%;
+            margin: 30px 400px;
+        }
+        p {
+            margin: 0 100px;
+        }
+    }
+    /* Restaurants */
+    header a {
+        display: none;
+    }
+    .picture {
+        height: 700px;
+    }
+    .menu {
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        h1 {
+            padding-left: 32px;
+        }
+        .fa-heart {
+            display: none;
+        }
+        .repas {
+            width: 30%;
+            margin: 0 30px;
+        }
+        .space-between {
+            margin-right: 80%;
+        }
+        .menu-content {
+            margin: 16px 0;
+        }
+    }
+}
