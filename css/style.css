@@ -232,9 +232,7 @@ p {
 }
 
 .menu .fa-heart {
-  left: 88%;
-  font-size: 1.8em;
-  background-color: #F2F2F2;
+  font-size: 2em;
 }
 
 .menu__content {
@@ -890,13 +888,13 @@ h2 {
   }
 }
 
-.fa-heart {
+.card .fa-heart {
   position: absolute;
   background-color: transparent;
   color: grey;
 }
 
-.fa-heart.far:hover + i {
+.card .fa-heart.far:hover + i {
   color: #9356DC;
   -webkit-animation: heart 2000ms ease-out;
           animation: heart 2000ms ease-out;
@@ -904,7 +902,7 @@ h2 {
           animation-fill-mode: forwards;
 }
 
-.fa-heart.fas {
+.card .fa-heart.fas {
   color: #9356DC;
   font-size: 0;
 }
@@ -924,6 +922,43 @@ h2 {
   }
   100% {
     font-size: 1.3em;
+  }
+}
+
+.menu .fa-heart {
+  position: absolute;
+  background-color: transparent;
+  color: grey;
+}
+
+.menu .fa-heart.far:hover + i {
+  color: #9356DC;
+  -webkit-animation: heart2 2000ms ease-out;
+          animation: heart2 2000ms ease-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.menu .fa-heart.fas {
+  color: #9356DC;
+  font-size: 0;
+}
+
+@-webkit-keyframes heart2 {
+  0% {
+    font-size: 0;
+  }
+  100% {
+    font-size: 1.8em;
+  }
+}
+
+@keyframes heart2 {
+  0% {
+    font-size: 0;
+  }
+  100% {
+    font-size: 1.8em;
   }
 }
 
@@ -1142,15 +1177,13 @@ h2 {
   .menu h1 {
     padding-left: 32px;
   }
-  .menu .fa-heart {
-    display: none;
-  }
   .menu .repas {
     width: 30%;
     margin: 0 30px;
   }
   .menu .space-between {
-    margin-right: 80%;
+    width: 100%;
+    margin-right: 32px;
   }
   .menu .menu-content {
     margin: 16px 0;

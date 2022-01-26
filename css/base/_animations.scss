@@ -88,20 +88,22 @@
     }
 }
 
-.fa-heart {
-    position: absolute;
-    background-color: transparent;
-    color: grey;
-    &.far {
-        &:hover+i {
-            color: $color-primary;
-            animation: heart 2000ms ease-out;
-            animation-fill-mode: forwards;
+.card {
+    .fa-heart {
+        position: absolute;
+        background-color: transparent;
+        color: grey;
+        &.far {
+            &:hover+i {
+                color: $color-primary;
+                animation: heart 2000ms ease-out;
+                animation-fill-mode: forwards;
+            }
         }
-    }
-    &.fas {
-        color: $color-primary;
-        font-size: 0;
+        &.fas {
+            color: $color-primary;
+            font-size: 0;
+        }
     }
 }
 
@@ -111,6 +113,34 @@
     }
     100% {
         font-size: 1.3em;
+    }
+}
+
+.menu {
+    .fa-heart {
+        position: absolute;
+        background-color: transparent;
+        color: grey;
+        &.far {
+            &:hover+i {
+                color: $color-primary;
+                animation: heart2 2000ms ease-out;
+                animation-fill-mode: forwards;
+            }
+        }
+        &.fas {
+            color: $color-primary;
+            font-size: 0;
+        }
+    }
+}
+
+@keyframes heart2 {
+    0% {
+        font-size: 0;
+    }
+    100% {
+        font-size: 1.8em;
     }
 }
 
