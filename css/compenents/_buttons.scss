@@ -12,11 +12,13 @@
     margin-top: 32px;
     padding: 0 10px;
     &:hover {
-        background-color: lighten($color-primary, 10%);
         box-shadow: 0px 5px 5px grey;
     }
 }
 
 .linear-gradient {
-    background: linear-gradient(-7deg, darken($color-primary, 2%), lighten($color-secondary, 2%))
+    background: linear-gradient(-7deg, darken($color-primary, 2%), lighten($color-secondary, 2%));
+    &:hover {
+        background: lighten($color-primary, 20%);
+    }
 }

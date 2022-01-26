@@ -320,13 +320,16 @@ footer i {
 }
 
 .btn:hover {
-  background-color: #ae80e5;
   -webkit-box-shadow: 0px 5px 5px grey;
           box-shadow: 0px 5px 5px grey;
 }
 
 .linear-gradient {
   background: linear-gradient(-7deg, #8e4eda, #ff83dd);
+}
+
+.linear-gradient:hover {
+  background: #c9abee;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
