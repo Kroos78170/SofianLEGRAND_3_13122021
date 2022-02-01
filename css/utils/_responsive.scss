@@ -24,9 +24,6 @@
 
 @media (min-width: 992px) {
     /* Général */
-    .loader {
-        display: none;
-    }
     /* Accueil */
     header {
         .logo {
@@ -73,8 +70,10 @@
         }
     }
     /* Restaurants */
-    header a {
-        display: none;
+    header {
+        .margin {
+            margin-left: 10%;
+        }
     }
     .picture {
         height: 700px;
